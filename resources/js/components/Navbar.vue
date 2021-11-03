@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light py-5">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
@@ -8,7 +8,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item" v-for="item, key in itens" :key="key">
-                        <a class="nav-link" :href="item.link == '' ? item.ref : item.link">{{item.text}}</a>
+                        <a class="nav-link" :href="item.link == '' ? item.ref : item.link">{{item.text | upperFirstLetter}}</a>
                     </li>
                 </ul>
             </div>
