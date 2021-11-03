@@ -13,5 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .vue()
-    .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css/style.css');
+    .js('node_modules/popper.js/dist/popper.js', 'public/js').sourceMaps()
+    .sass('resources/sass/style.scss', 'public/css').sourceMaps()
+    .sass('node_modules/bootstrap/scss/bootstrap.scss', 'public/css').sourceMaps();
     // .sass('resources/sass/app.scss', 'public/css');

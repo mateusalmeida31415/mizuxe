@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     {{-- Boostrap --}}
+    <link rel="stylesheet" href="{{asset('css/bootstrap.css')}}">
+
+    {{-- Estilo personalizado --}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
     <title>@yield('titulo')</title>
@@ -25,5 +28,7 @@
     {{-- Vue.js --}}
     <script src="{{asset('js/app.js')}}"></script>
 
+    {{-- Popper.js --}}
+    <script src="{{asset('js/popper.js')}}"></script>
 </body>
 </html>

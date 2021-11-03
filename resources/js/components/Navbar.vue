@@ -1,7 +1,10 @@
 <template>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light py-5">
+    <nav class="navbar navbar-expand-sm navbar-light bg-light py-4 fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
+            <a class="navbar-brand" href="#">
+                <img :src="image" alt="Logo" width="50">
+                <h3 class="d-inline align-middle">Mizuxe</h3>
+            </a>
             <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -18,6 +21,6 @@
 
 <script>
     export default {
-        props: ['itens']
+        props: ['itens', 'image']
     }
 </script>
