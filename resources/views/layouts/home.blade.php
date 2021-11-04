@@ -11,6 +11,9 @@
     {{-- Estilo personalizado --}}
     <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
+    {{-- Fontawesome --}}
+    <script src="https://kit.fontawesome.com/d6b75e91c7.js" crossorigin="anonymous"></script>
+
     <title>@yield('titulo')</title>
 </head>
 <body>

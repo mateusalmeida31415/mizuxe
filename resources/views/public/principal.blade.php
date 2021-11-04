@@ -11,4 +11,8 @@
         {'text': 'contact', 'ref': '#home', 'link': ''}]"
     image="{{asset('img/mlogo.png')}}">
     </navbar-component>
+
+    <showcase-component>
+        
+    </showcase-component>
 @endsection
