@@ -31,4 +31,5 @@
     {{-- Why Section --}}
     <why-component></why-component>
 
+    {{-- Authors Section --}}
 @endsection
