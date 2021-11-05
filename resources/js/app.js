@@ -29,6 +29,8 @@ Vue.component('newsletter-component', require('./components/Newsletter.vue').def
 
 Vue.component('box-component', require('./components/Box.vue').default);
 
+Vue.component('why-component', require('./components/Why.vue').default);
+
 Vue.filter('upperFirstLetter', function (string) {
     return string.split('')
                 .map((v, index) => {

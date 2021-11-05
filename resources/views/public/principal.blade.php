@@ -27,4 +27,8 @@
         {'title': 'be stronger', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
     ]">
     </box-component>
+
+    {{-- Why Section --}}
+    <why-component></why-component>
+
 @endsection
