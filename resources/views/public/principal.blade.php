@@ -18,5 +18,13 @@
 
     {{-- Newsletter --}}
     <newsletter-component></newsletter-component>
-
+    
+    {{-- Box --}}
+    <box-component :card="[
+        {'title': 'be better', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
+        {'title': 'be smarter', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
+        {'title': 'be faster', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
+        {'title': 'be stronger', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
+    ]">
+    </box-component>
 @endsection

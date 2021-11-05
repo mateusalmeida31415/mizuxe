@@ -27,6 +27,8 @@ Vue.component('showcase-component', require('./components/Showcase.vue').default
 
 Vue.component('newsletter-component', require('./components/Newsletter.vue').default);
 
+Vue.component('box-component', require('./components/Box.vue').default);
+
 Vue.filter('upperFirstLetter', function (string) {
     return string.split('')
                 .map((v, index) => {
