@@ -25,6 +25,8 @@ Vue.component('navbar-component', require('./components/Navbar.vue').default);
 
 Vue.component('showcase-component', require('./components/Showcase.vue').default);
 
+Vue.component('newsletter-component', require('./components/Newsletter.vue').default);
+
 Vue.filter('upperFirstLetter', function (string) {
     return string.split('')
                 .map((v, index) => {
