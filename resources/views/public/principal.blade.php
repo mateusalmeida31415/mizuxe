@@ -15,4 +15,6 @@
     <showcase-component>
         
     </showcase-component>
+
+    <newsletter-component></newsletter-component>
 @endsection
