@@ -29,4 +29,6 @@
     </box-component>
 
     {{-- Why Section --}}
+    <why-component></why-component>
+
 @endsection
