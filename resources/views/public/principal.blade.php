@@ -3,6 +3,7 @@
 @section('titulo', 'Mizuxe - Principal')
 
 @section('conteudo')
+    {{-- Barra de navegação --}}
     <navbar-component
     :itens="[
         {'text': 'home', 'ref': '#home', 'link': ''}, 
@@ -12,9 +13,10 @@
     image="{{asset('img/mlogo.png')}}">
     </navbar-component>
 
-    <showcase-component>
-        
-    </showcase-component>
+    {{-- Showcase--}}
+    <showcase-component></showcase-component>
 
+    {{-- Newsletter --}}
     <newsletter-component></newsletter-component>
+
 @endsection
