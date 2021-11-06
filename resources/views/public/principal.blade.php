@@ -38,4 +38,7 @@
         {'name': 'John Doe', 'image': '/img/person3.jpg', 'function': 'Editor', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
         {'name': 'Kevin Swanson', 'image': '/img/person4.jpg', 'function': 'Designer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'}
     ]"></authors-component>
+
+    {{-- Contact Section --}}
+    <contact-component></contact-component>
 @endsection
