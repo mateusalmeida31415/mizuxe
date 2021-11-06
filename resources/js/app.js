@@ -35,6 +35,8 @@ Vue.component('authors-component', require('./components/Authors.vue').default);
 
 Vue.component('contact-component', require('./components/Contact.vue').default);
 
+Vue.component('footer-component', require('./components/Footer.vue').default);
+
 Vue.filter('upperFirstLetter', function (string) {
     return string.split('')
                 .map((v, index) => {
