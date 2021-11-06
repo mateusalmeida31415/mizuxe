@@ -32,6 +32,27 @@ body{
     }
 }
 
+#authors{
+
+    .card img{
+        border-radius: 50px;
+    }
+
+    .card:hover{
+        background-color: $primary;
+        color: white;
+    }
+
+    .card .card-body{
+       transform: translateY(-50px);
+       transition: all linear .25s;
+    }
+
+    .card .fab{
+        color: white;
+    }
+}
+
 @media (max-width: 991.98px) {
     #showcase h1{
         font-size: 3.5rem;
