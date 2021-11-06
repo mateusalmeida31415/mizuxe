@@ -40,4 +40,5 @@
     ]"></authors-component>
 
     {{-- Contact Section --}}
+    <contact-component></contact-component>
 @endsection

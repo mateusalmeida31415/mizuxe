@@ -33,6 +33,8 @@ Vue.component('why-component', require('./components/Why.vue').default);
 
 Vue.component('authors-component', require('./components/Authors.vue').default);
 
+Vue.component('contact-component', require('./components/Contact.vue').default);
+
 Vue.filter('upperFirstLetter', function (string) {
     return string.split('')
                 .map((v, index) => {
