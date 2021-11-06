@@ -41,4 +41,6 @@
 
     {{-- Contact Section --}}
     <contact-component></contact-component>
+
+    {{-- Footer --}}
 @endsection
