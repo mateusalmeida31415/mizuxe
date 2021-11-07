@@ -16,7 +16,7 @@
 
     <title>@yield('titulo')</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main-nav">
 
     <div id="app">
         @yield('conteudo')
@@ -34,5 +34,8 @@
     {{-- Popper.js --}}
     <script src="{{asset('js/popper.js')}}"></script>
 
+    <script>
+        $('body').scrollspy({ target: '#main-nav' });
+    </script>
 </body>
 </html>

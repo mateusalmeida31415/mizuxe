@@ -5,16 +5,17 @@
 @section('conteudo')
     {{-- Barra de navegação --}}
     <navbar-component
+    id="main-nav"
     :itens="[
-        {'text': 'home', 'ref': '#home', 'link': ''}, 
-        {'text': 'about', 'ref': '#home', 'link': ''},
-        {'text': 'meet the authors', 'ref': '#home', 'link': 'http://mizuxe.test'},
-        {'text': 'contact', 'ref': '#home', 'link': ''}]"
+        {'text': 'home', 'ref': '#showcase', 'link': ''}, 
+        {'text': 'about', 'ref': '#why', 'link': ''},
+        {'text': 'meet the authors', 'ref': '#authors', 'link': ''},
+        {'text': 'contact', 'ref': '#contact', 'link': ''}]"
     image="{{asset('img/mlogo.png')}}">
     </navbar-component>
 
     {{-- Showcase--}}
-    <showcase-component></showcase-component>
+    <showcase-component id="showcase"></showcase-component>
 
     {{-- Newsletter --}}
     <newsletter-component></newsletter-component>
@@ -29,10 +30,10 @@
     </box-component>
 
     {{-- Why Section --}}
-    <why-component></why-component>
+    <why-component id="why"></why-component>
 
     {{-- Authors Section --}}
-    <authors-component :authors="[
+    <authors-component id="authors" :authors="[
         {'name': 'Susan Williams', 'image': '/img/person1.jpg', 'function': 'Lead Writer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
         {'name': 'Grace Smith', 'image': '/img/person2.jpg', 'function': 'Co-Writer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
         {'name': 'John Doe', 'image': '/img/person3.jpg', 'function': 'Editor', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
@@ -40,7 +41,7 @@
     ]"></authors-component>
 
     {{-- Contact Section --}}
-    <contact-component></contact-component>
+    <contact-component id="contact"></contact-component>
 
     {{-- Footer --}}
     <footer-component></footer-component>

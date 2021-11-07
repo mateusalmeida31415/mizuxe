@@ -1,5 +1,5 @@
 <template>
-    <section id="showcase">
+    <section id="id">
         <div class="overlay">
             <div class="container">
                 <div class="row">
@@ -22,5 +22,7 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        props: ['showcase']
+    }
 </script>

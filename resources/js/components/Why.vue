@@ -1,5 +1,5 @@
 <template>
-    <section id="why" class="bg-light py-5">
+    <section :id="id" class="bg-light py-5">
         <div class="container text-center">
             <div class="row">
                 <div class="col-6 offset-3 py-3 border-bottom">
@@ -61,5 +61,7 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        props: ['id']
+    }
 </script>

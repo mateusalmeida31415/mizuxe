@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light py-4 fixed-top">
+    <nav id="id" class="navbar navbar-expand-sm navbar-light bg-light py-4 fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img :src="image" alt="Logo" width="50">
@@ -21,6 +21,6 @@
 
 <script>
     export default {
-        props: ['itens', 'image']
+        props: ['itens', 'image', 'id']
     }
 </script>

@@ -1,8 +1,13 @@
 $primary: #3292a6;
 $primary-overlay: rgba($primary, 0.8);
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin-top: 105px;
+    scroll-behavior: smooth;
 }
 
 .navbar{
