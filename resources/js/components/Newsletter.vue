@@ -1,21 +1,19 @@
 <template>
-    <section id="newsletter" class="py-5 bg-dark">
+    <!-- id: ID da section -->
+    <!-- inputs: Um objeto que contem atributos informações dos inputs.  
+    type(Tipo do formulário), placeholder(Descrição do campo para os usuários finais) e value(atributo relacionando com valor contido no campo) -->
+    <!-- btnText: Texto do botão -->
+    <section :id="id" class="py-5 bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md">
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Seu nome">
+                <template v-for="input in inputs">
+                    <div class="col-md">
+                        <input :type="input.type" class="form-control form-control-lg" :placeholder="input.placeholder" v-model="input.value">
                     </div>
-                </div>
+                </template>
+            
                 <div class="col-md">
-                    <div class="form-group">
-                        <input type="email" class="form-control form-control-lg" id="email" placeholder="Seu e-mail">
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block btn-lg">Cadastrar</button>
-                    </div>
+                    <button class="btn btn-primary btn-block btn-lg" @click="show()">{{btnText}}</button>
                 </div>
             </div>
         </div>
@@ -23,5 +21,15 @@
 </template>
 
 <script>
-    export default {}
+    export default {
+        props: ['id', 'inputs', 'btnText'], 
+        methods: {
+            show(){
+                this.inputs.forEach(element => {
+                    console.log(element.value)
+                });
+            }
+        }
+
+    }
 </script>

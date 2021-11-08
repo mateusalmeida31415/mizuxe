@@ -26,7 +26,13 @@
     alt="Book Cover"></showcase-component>
 
     {{-- Newsletter --}}
-    <newsletter-component></newsletter-component>
+    <newsletter-component
+    id="newsletter"
+    :inputs="[
+        {'type': 'text', 'placeholder': 'Username', 'value': ''},
+        {'type': 'email', 'placeholder': 'E-mail', 'value': ''}
+    ]"
+    btn-text="Cadastrar"></newsletter-component>
     
     {{-- Box --}}
     <box-component :card="[
