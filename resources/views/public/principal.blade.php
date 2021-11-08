@@ -17,7 +17,13 @@
     </navbar-component>
 
     {{-- Showcase--}}
-    <showcase-component id="showcase"></showcase-component>
+    <showcase-component 
+    id="showcase"
+    title="Do What You Dream Of..."
+    text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus quaerat velit incidunt provident ullam sint blanditiis optio nesciunt nam!"
+    link="#"
+    image="img/book.png"
+    alt="Book Cover"></showcase-component>
 
     {{-- Newsletter --}}
     <newsletter-component></newsletter-component>
