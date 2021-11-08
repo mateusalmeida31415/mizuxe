@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('titulo', 'Mizuxe - Principal')
+@section('titulo', 'Principal')
 
 @section('conteudo')
     {{-- Barra de navegação --}}
@@ -11,7 +11,9 @@
         {'text': 'about', 'ref': '#why', 'link': ''},
         {'text': 'meet the authors', 'ref': '#authors', 'link': ''},
         {'text': 'contact', 'ref': '#contact', 'link': ''}]"
-    image="{{asset('img/mlogo.png')}}">
+    image="{{asset('img/mlogo.png')}}"
+    link="{{env('APP_URL')}}"
+    title="mizuxe">
     </navbar-component>
 
     {{-- Showcase--}}
