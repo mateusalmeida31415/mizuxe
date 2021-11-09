@@ -7,7 +7,7 @@
         <div class="container">
             <div class="row">
                 <template v-for="input in inputs">
-                    <div class="col-md">
+                    <div class="col-md mb-3 mb-lg-0">
                         <input :type="input.type" class="form-control form-control-lg" :placeholder="input.placeholder" v-model="input.value">
                     </div>
                 </template>
