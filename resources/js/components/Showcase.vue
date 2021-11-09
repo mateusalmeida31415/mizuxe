@@ -1,28 +1,20 @@
 <template>
-    <!-- id: ID da section  -->
-    <!-- title: Título principal da section-->
-    <!-- text: Descrição do título -->
-    <!-- link: Link de referencia do botão -->
-    <!-- imagem: Imagem exibida na seção -->
-    <!-- alt: Descrição da imagem -->
-    <section :id="id">
+    <section id="id">
         <div class="overlay">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 text-center d-flex flex-column justify-content-center align-item-center mt-5 pt-5 mt-lg-0 pt-lg-0">
-                        <!-- Title -->
-                        <h1 class="display-3">{{title}}</h1>
-                        <!-- Text description -->
-                        <p class="lead">{{text}}</p>
-                        <!-- Know more Buttom -->
-                        <a :href="link" class="btn btn-outline-secondary btn-lg text-white align-self-center">
+                        <h1 class="display-3">Do What You Dream Of... </h1>
+                        <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus quaerat velit incidunt provident ullam sint blanditiis optio nesciunt nam!</p>
+                        <a href="#" class="btn btn-outline-secondary btn-lg text-white align-self-center">
                             <i class="fas fa-arrow-right"></i> Read More
                         </a>
                     </div>
-                    <!-- Exemplo imagem-->
+
                     <div class="col-lg-6 d-none d-lg-block">
-                        <img :src="image" :alt="alt" class="img-fluid">
+                        <img src="img/book.png" alt="Livro" class="img-fluid">
                     </div>
+
                 </div>
             </div>
         </div>
@@ -31,6 +23,6 @@
 
 <script>
     export default {
-        props: ['id' ,'title', 'text', 'link', 'image', 'alt']
+        props: ['showcase']
     }
 </script>
