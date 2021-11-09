@@ -35,7 +35,9 @@
     btn-text="Cadastrar"></newsletter-component>
     
     {{-- Box --}}
-    <box-component :card="[
+    <box-component 
+    id="boxes"
+    :card="[
         {'title': 'be better', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
         {'title': 'be smarter', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
         {'title': 'be faster', 'text': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, cum.'},
@@ -44,7 +46,14 @@
     </box-component>
 
     {{-- Why Section --}}
-    <why-component id="why"></why-component>
+    <why-component 
+    id="why"
+    title="Why This Book?"
+    text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae, quasi."
+    :accordion="[
+        {'title': 'Get Inspired' , 'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime dicta neque ducimus nostrum officiis exercitationem, ratione aliquid provident possimus aperiam rem perspiciatis, adipisci laboriosam necessitatibus officia ut porro odio voluptas dolore aut inventore eveniet labore? Et veritatis provident iure, alias eveniet sit ex eaque nesciunt repudiandae dolores eius ducimus fuga!'},
+        {'title': 'Gain The Knowledge', 'text': 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt magnam ullam voluptates voluptate illum consequatur minus pariatur dolorum. Vitae saepe dicta harum aperiam nihil quasi ipsum ipsam asperiores ratione perferendis, labore cupiditate vel incidunt voluptate necessitatibus doloremque porro magni amet consectetur facere, at voluptas quo! Alias laborum possimus facilis unde?'},
+        {'title': 'Open Your', 'text': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima praesentium ratione ex dolorem nihil doloremque laboriosam laudantium dicta totam mollitia dolorum aliquam delectus blanditiis neque, ea aperiam repellat accusamus eius atque alias eum nobis culpa voluptatibus. Mollitia, blanditiis, fugiat aut debitis quisquam nobis harum perspiciatis numquam aliquam eaque ut omnis!'}]"></why-component>
 
     {{-- Authors Section --}}
     <authors-component id="authors" :authors="[

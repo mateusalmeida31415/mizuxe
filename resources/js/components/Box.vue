@@ -1,7 +1,7 @@
 <template>
     <!-- card: Objeto com propriedades do card. title(Título do card), 
     text(Texto explicativo do card) -->
-    <section id="boxes" class="py-5">
+    <section :id="id" class="py-5">
         <div class="container">
             <div class="row">
                 <!-- Usar um array cuja a qualtidade seja multipla de 12 -->
@@ -25,6 +25,6 @@
 
 <script>
     export default {
-        props: ['card']
+        props: ['card', 'id']
     }
 </script>
