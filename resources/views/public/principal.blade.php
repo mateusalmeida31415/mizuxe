@@ -59,7 +59,16 @@
     ]"></authors-component>
 
     {{-- Contact Section --}}
-    <contact-component id="contact"></contact-component>
+    <contact-component 
+    id="contact"
+    title="Get In Touch"
+    text="Lorem ipsum dolor sit amet consectetur adipisicing."
+    btn-text="Submit"
+    :inputs="[
+        {'type': 'text', 'icon': 'fas fa-user-alt fa-lg', 'placeholder': 'Name', 'value' : ''},
+        {'type': 'email', 'icon': 'fas fa-envelope fa-lg', 'placeholder': 'E-mail', 'value' : ''},
+        {'type': '', 'icon': 'fas fa-pencil-alt fa-lg', 'placeholder': 'Message', 'value' : ''}]">
+    </contact-component>
 
     {{-- Footer --}}
     <footer-component></footer-component>
