@@ -71,5 +71,5 @@
     </contact-component>
 
     {{-- Footer --}}
-    <footer-component></footer-component>
+    <footer-component id="footer"></footer-component>
 @endsection
