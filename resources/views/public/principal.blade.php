@@ -1,6 +1,6 @@
 @extends('layouts.home')
 
-@section('titulo', 'Mizuxe - Principal')
+@section('titulo', 'Principal')
 
 @section('conteudo')
     {{-- Barra de navegação --}}
@@ -11,14 +11,28 @@
         {'text': 'about', 'ref': '#why', 'link': ''},
         {'text': 'meet the authors', 'ref': '#authors', 'link': ''},
         {'text': 'contact', 'ref': '#contact', 'link': ''}]"
-    image="{{asset('img/mlogo.png')}}">
+    image="{{asset('img/mlogo.png')}}"
+    link="{{env('APP_URL')}}"
+    title="mizuxe">
     </navbar-component>
 
     {{-- Showcase--}}
-    <showcase-component id="showcase"></showcase-component>
+    <showcase-component 
+    id="showcase"
+    title="Do What You Dream Of..."
+    text="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus quaerat velit incidunt provident ullam sint blanditiis optio nesciunt nam!"
+    link="#"
+    image="img/book.png"
+    alt="Book Cover"></showcase-component>
 
     {{-- Newsletter --}}
-    <newsletter-component></newsletter-component>
+    <newsletter-component
+    id="newsletter"
+    :inputs="[
+        {'type': 'text', 'placeholder': 'Username', 'value': ''},
+        {'type': 'email', 'placeholder': 'E-mail', 'value': ''}
+    ]"
+    btn-text="Cadastrar"></newsletter-component>
     
     {{-- Box --}}
     <box-component :card="[

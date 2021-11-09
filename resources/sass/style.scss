@@ -59,6 +59,9 @@ body{
 }
 
 @media (max-width: 991.98px) {
+    #showcase{
+        min-height: 500px;
+    }
     #showcase h1{
         font-size: 3.5rem;
     }
