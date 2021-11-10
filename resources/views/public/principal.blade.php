@@ -52,11 +52,83 @@
     title="Meet The Authors" 
     text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione nihil reprehenderit corporis in at consequuntur?"
     :authors="[
-        {'name': 'Susan Williams', 'image': '/img/person1.jpg', 'function': 'Lead Writer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
-        {'name': 'Grace Smith', 'image': '/img/person2.jpg', 'function': 'Co-Writer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
-        {'name': 'John Doe', 'image': '/img/person3.jpg', 'function': 'Editor', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'},
-        {'name': 'Kevin Swanson', 'image': '/img/person4.jpg', 'function': 'Designer', 'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.'}
-    ]"></authors-component>
+            {
+                'name': 'Susan Williams', 
+                'image': '/img/person1.jpg', 
+                'function': 'Lead Writer', 
+                'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.', 
+                'redes': [
+                    {
+                        'icon': 'fab fa-facebook-square fa-2x', 
+                        'link': 'https://www.facebook.com'
+                    },
+                    {
+                        'icon': 'fab fa-twitter-square fa-2x', 
+                        'link': 'https://twitter.com/'
+                    },
+                    {
+                        'icon': 'fab fa-instagram-square fa-2x', 
+                        'link': 'https://www.instagram.com/'
+                    }
+
+                ]
+            },
+
+            {
+                'name': 'Grace Smith', 
+                'image': '/img/person2.jpg', 
+                'function': 'Co-Writer', 
+                'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.',
+                'redes': [
+                    {
+                        'icon': 'fab fa-facebook-square fa-2x', 
+                        'link': 'https://www.facebook.com'
+                    },
+                    {
+                        'icon': 'fab fa-twitter-square fa-2x', 
+                        'link': 'https://twitter.com/'
+                    },
+                    {
+                        'icon': 'fab fa-instagram-square fa-2x', 
+                        'link': 'https://www.instagram.com/'
+                    }
+
+                ]
+            },
+
+            {
+                'name': 'John Doe', 
+                'image': '/img/person3.jpg', 
+                'function': 'Editor', 
+                'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.',
+                'redes': [
+                    {
+                        'icon': 'fab fa-facebook-square fa-2x', 
+                        'link': 'https://www.facebook.com'
+                    },
+                    {
+                        'icon': 'fab fa-instagram-square fa-2x', 
+                        'link': 'https://www.instagram.com/'
+                    }
+
+                ]
+            },
+
+            {
+                'name': 'Kevin Swanson', 
+                'image': '/img/person4.jpg', 
+                'function': 'Designer', 
+                'feedback': 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus incidunt dolorum beatae, inventore porro quaerat.',
+                'redes': [
+                    {
+                        'icon': 'fab fa-facebook-square fa-2x', 
+                        'link': 'https://www.facebook.com'
+                    },
+
+                ]
+            }
+    ]"
+    ></authors-component>
 
     {{-- Contact Section --}}
     <contact-component 
