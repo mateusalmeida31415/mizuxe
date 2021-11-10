@@ -2,9 +2,10 @@
     <section id="newsletter" class="py-5 bg-dark">
         <div class="container">
             <div class="row">
-                <div class="col-md">
-                    <div class="form-group">
-                        <input type="text" class="form-control form-control-lg" id="name" placeholder="Seu nome">
+
+                <template v-for="input in inputs">
+                    <div class="col-md mb-3 mb-lg-0">
+                        <input :type="input.type" class="form-control form-control-lg" :placeholder="input.placeholder" v-model="input.value">
                     </div>
                 </div>
                 <div class="col-md">
