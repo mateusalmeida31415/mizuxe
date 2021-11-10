@@ -14,7 +14,7 @@
     {{-- Fontawesome --}}
     <script src="https://kit.fontawesome.com/d6b75e91c7.js" crossorigin="anonymous"></script>
 
-    <title>{{env('APP_NAME')}} - @yield('titulo')</title>
+    <title>@yield('titulo')</title>
 </head>
 <body data-spy="scroll" data-target="#main-nav">
 
